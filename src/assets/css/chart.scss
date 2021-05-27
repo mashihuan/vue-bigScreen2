@@ -1,0 +1,43 @@
+.chart-wrapper {
+  position: relative;
+  margin-bottom: 10PX;
+  border: 1px solid #1E3175;
+  box-shadow: 0 0 15PX 1PX #031B76;
+  background: rgba(1, 23, 83, 0.4);
+
+  .chart-inner {
+    overflow: auto;
+
+    .header {
+      line-height: 1.8;
+      background: url('~@/assets/img/title_bg.png') no-repeat 0 0 / 100%;
+      padding-left: 15PX;
+      .title {
+        font-size: 17px;
+        font-weight: normal;
+        color: #fff;
+      }
+    }
+
+    .chart {
+
+    }
+  }
+}
+
+
+// 图表最小尺寸
+@media screen and(max-width: 1500px) {
+  .title {
+    font-size: 14px !important;
+  }
+}
+@media screen and(max-width: 992px) {
+  .chart-inner {
+    height: 270PX !important;
+    overflow-x: auto;
+  }
+  .chart {
+    height: 220PX !important;
+  }
+}

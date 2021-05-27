@@ -1,0 +1,101 @@
+/* 样式的重置 */
+body, html, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, header, menu, section, p, input, td, th, ins {
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+i, em {
+  font-style: normal;
+}
+
+input, textarea, button, select, a {
+  outline: none;
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#app {
+  position: relative;
+  min-height: 100vh;
+  font-size: 14PX;
+  line-height: 1.15;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  background: url('~@/assets/img/body_bg.jpg') no-repeat center center / cover;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 100PX !important;
+  }
+}
+
+@font-face {
+  font-family: electronicFont;
+  src: url(../font/DS-DIGIT.TTF);
+}
+
+
+/* 滚动条样式 */
+::-webkit-scrollbar-track-piece {
+  background-color: none;
+  -webkit-border-radius: 0;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #2A2A52;
+  -webkit-border-radius: 6px;
+  outline: 0;
+  outline-offset: -2px;
+  border: 0;
+  filter: alpha(opacity = 50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+::-webkit-scrollbar-thumb:hover {
+  height: 50px;
+  background-color: #878987;
+  -webkit-border-radius: 6px;
+}
+
